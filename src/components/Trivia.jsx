@@ -41,7 +41,6 @@ export default function Trivia({
     //   setClassName(a.correct ? "answer correct" : "answer wrong");
     // }, 3000);
 
-    // setTimeout(() => {
       delay(5000, () => {
       if (a.correct) {
         correctAnswer();
@@ -49,10 +48,6 @@ export default function Trivia({
           setQuestionNumber((prev) => prev + 1);
           setSelectedAnswer(null);
         });
-        // setTimeout(() => {
-        //   setQuestionNumber((prev) => prev + 1);
-        //   setSelectedAnswer(null);
-        // }, 1000);
       } else {
         wrongAnswer();
         delay(1000, () => {
